@@ -9,7 +9,7 @@ if __name__ == "__main__":
     logger = make_logger('Description of logger', logger_path, 'name of logging file')
 
     # Save argparser into  logging file
-    logger.infor('information to be saved') 
+    logger.info('information to be saved') 
     for k, v in parser.__dict__.items():
         logger.info('\t----- {}: {}'.format(k, v))
 
