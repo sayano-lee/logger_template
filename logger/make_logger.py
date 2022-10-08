@@ -10,7 +10,7 @@ def make_logger(name, save_dir, save_filename):
 
     ch = logging.StreamHandler(stream=sys.stdout)
     ch.setLevel(logging.DEBUG)
-    formatter = logging.Formatter("%(message)s")
+    formatter = logging.Formatter("%(asctime)s %(message)s")
     ch.setFormatter(formatter)
     logger.addHandler(ch)
 
